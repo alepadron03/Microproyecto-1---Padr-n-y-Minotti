@@ -31,12 +31,38 @@ h1{
 }
 
 
-<div class="container">
-  <div class="vertical-center">
-    <button>Centered Button</button>
-  </div>
-</div>
-button{
 
+.button{
 
+  text-align: center;  
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 16px 32px;
+  background-color: chartreuse;
+  text-decoration:none ;
+  border-radius: 12px;
+  display: block;
+  font-size: 16px;
+  margin: auto;
+  left: 50%;
+  border: 2px solid #ffffff;
+    
+  transition-duration: 0.4s;
+  cursor: pointer;
+        
+}
+.button1 {
+  background-color: darkgreen;
+}
+
+.button2  {
+  background-color: darkred;
+}
+
+.button3  {
+  background-color: goldenrod;
+}
+
+.button4  {
+  background-color: darkblue;
 }
