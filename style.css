@@ -1,9 +1,11 @@
 body{
-    background-color: #000000;
+    background-color: #ffffff;
+    place-items: center;  
 }
 h1{
     text-align: center;
     font-family: sans-serif;
+    display: block
    font-size: 3rem;
    letter-spacing: 0.15rem;
    text-shadow: 2px -2px 2px #000000 ,
@@ -12,14 +14,16 @@ h1{
                 8px -8px 8px #4d45bb;
                 
     color: rgb(255, 255, 255);
+    margin-left: -100px;
     
 
 }
 
 .container {
-  height: 200px;
-  position: relative;
-  border: 3px solid green;
+  display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100%; 
 }
 
 .vertical-center {
@@ -32,24 +36,7 @@ h1{
 
 
 
-.startButton{
 
-  text-align: center;  
-  border: none;
-  color: rgb(0, 0, 0);
-  padding: 16px 32px;
-  text-decoration:none ;
-  border-radius: 12px;
-  display: block;
-  font-size: 16px;
-  margin: auto;
-  left: 50%;
-  border: 2px solid #ffffff;
-    
-  transition-duration: 0.4s;
-  cursor: pointer;
-        
-}
 
 h2{
   color: #ffffff;
@@ -61,4 +48,83 @@ h2{
                 
   font-family: sans-serif;
 }
-.
+.startButton{
+  background-color: #4d45bb;
+  color: #fcfcfc;
+  display:inline-block;
+  margin: 0 auto;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  position: relative;
+  transition: .3s linear;
+  text-decoration: none;
+  border-radius: 12px;
+  border: none;
+  font-family: sans-serif;
+}
+.startButton:hover{
+
+  background-color: #4d45bb;
+  box-shadow: 0 0 5px #4d45bb, 0 0 25px #4d45bb,0 0 
+  50px #4d45bb, 0 0 100px #4d45bb, 0 0 200px #4d45bb;
+  
+}
+.BackButton{
+  background-color: #4d45bb;
+  color: #fcfcfc;
+  display: inline-block;
+  margin: 0 auto;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px 20px;
+  position: relative;
+  transition: .3s linear;
+  text-decoration: none;
+  border-radius: 12px;
+  border: none;
+  font-family: sans-serif;
+
+}
+
+.BackButton:hover{
+
+  background-color: #4d45bb;
+  box-shadow: 0 0 5px #4d45bb, 0 0 25px #4d45bb,0 0 
+  50px #4d45bb, 0 0 100px #4d45bb, 0 0 200px #4d45bb;
+  
+}
+.Botones{
+  display: inline-grid;
+  width: 150px ;
+  height: 150px;
+  grid-gap: 10px;
+  grid-template-columns: auto auto;
+  transform: rotate(45deg);
+  border-color: #000000
+}
+.square{
+  border-radius: 5px;
+  width: 150px ;
+  height: 150px;
+  cursor: pointer;
+
+}
+.square:active,
+.active{
+  filter: brightness(200%);
+}
+.red{
+  background-color: #fe6f6b ;
+}
+.yellow{
+  background-color: #fef36b;
+}
+.blue{
+  background-color: #6b91fe;
+
+}
+.green{
+  background-color: #71fe6b;
+
+}
