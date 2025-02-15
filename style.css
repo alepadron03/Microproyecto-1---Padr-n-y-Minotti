@@ -1,11 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 body{
     background-color: #000000;
     place-items: center;  
-    font-family: sans-serif
+    font-family: "Russo One", serif;
 }
 h1{
     text-align: center;
-    font-family: sans-serif;
+    font-family: "Russo One", serif;
     
    font-size: 3rem;
    letter-spacing: 0.15rem;
@@ -42,13 +51,11 @@ h1{
 
 h2{
   color: #ffffff;
-  text-shadow: 2px -2px 2px #000000 ,
+  text-shadow: 2px -2px 2px #ffffff ,
                 4px -4px 4px  hsl(0, 100%, 99%),
-                6px -6px 6px #fafffa,
-                8px -8px 8px #ffffff;
                 text-align: center;
                 
-  font-family: sans-serif;
+  font-family: "Russo One", serif;
 }
 .startButton{
   background-color: #4d45bb;
@@ -63,10 +70,10 @@ h2{
   text-decoration: none;
   border-radius: 12px;
   border: none;
-  font-family: sans-serif;
+  font-family: "Russo One", serif;
 }
 .startButton:hover{
-
+  
   background-color: #4d45bb;
   box-shadow: 0 0 5px #4d45bb, 0 0 25px #4d45bb,0 0 
   50px #4d45bb, 0 0 100px #4d45bb, 0 0 200px #4d45bb;
@@ -85,7 +92,7 @@ h2{
   text-decoration: none;
   border-radius: 12px;
   border: none;
-  font-family: sans-serif;
+  font-family: "Russo One", serif;
 
 }
 
@@ -105,7 +112,7 @@ h2{
 }
 .headerTitle{
   text-align: center;
-  font-family: sans-serif;
+  font-family: "Russo One", serif;
   
  font-size: 3rem;
  letter-spacing: 0.15rem;
@@ -120,7 +127,15 @@ h2{
   width: 100%;
   height: auto;
 }
-.Botones{
+.game-container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+/*.Botones{
   display: inline-grid;
   width: 150px ;
   grid-gap: 10px;
@@ -130,6 +145,15 @@ h2{
   align-items: center;
   border-color: #000000;
   
+}*/
+
+.Botones {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  transform: rotate(45deg);
+  align-items: center;
+  border-color: #000000;
 }
 .square{
   border-radius: 5px;
@@ -138,6 +162,7 @@ h2{
   cursor: pointer;
 
 }
+
 .square:active,
 .active{
   filter: brightness(200%);
@@ -145,14 +170,67 @@ h2{
 .red{
   background-color: #fe6f6b ;
 }
+.red:hover{
+  
+  background-color: #e07070;
+  box-shadow: 0 0 5px #e07070, 0 0 25px #e07070;
+  
+}
 .yellow{
   background-color: #fef36b;
+}
+.yellow:hover{
+  
+  background-color: #dee070;
+  box-shadow: 0 0 5px #dee070, 0 0 25px #dee070;
+  
 }
 .blue{
   background-color: #6b91fe;
 
 }
+.blue:hover{
+  
+  background-color: #7870e0;
+  box-shadow: 0 0 5px #7870e0, 0 0 25px #7870e0,0 0 
+  50px #7870e0;
+  
+}
 .green{
   background-color: #71fe6b;
 
 }
+.green:hover{
+  
+  background-color: #93e070;
+  box-shadow: 0 0 5px #93e070, 0 0 25px #93e070,0 0 
+  50px #93e070;
+  
+}
+
+@media (min-width: 150px) {
+  .square {
+      width: 50px;
+      height: 50px;
+  }
+}
+@media (min-width: 300px) {
+  .square {
+      width: 80px;
+      height: 80px;
+  }
+}
+@media (min-width: 600px) {
+  .square {
+      width: 120px;
+      height: 120px;
+  }
+}
+
+@media (min-width: 900px) {
+  .square {
+      width: 150px;
+      height: 150px;
+  }
+}
+
