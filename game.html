@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIMON SAYS</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <div style="height: auto">
                 <p class="headerTitle">SIMON SAYS</p>
+                <p class="headerTitle" id ="puntuacion"></p>
             </div>             
         </div>
             <div class="game-container">
                 <div class="Botones">
-                    <div class="square red"></div>
-                    <div class="square yellow"></div>
-                    <div class="square blue"></div>
-                    <div class="square green"></div>
+                    <button class="square red" boton = "0" onclick="presionar(this)"></button>
+                    <button class="square yellow" boton = "1" onclick="presionar(this)"></button>
+                    <button class="square blue" boton = "2" onclick="presionar(this)"></button>
+                    <button class="square green" boton = "3" onclick="presionar(this)"></button>
                 </div>
             </div>
             <div class="footer">
